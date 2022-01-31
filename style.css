@@ -4,113 +4,115 @@
   box-sizing: border-box;
 }
 header {
-  margin: 10px;
-  padding: 10px 0;
+  margin: 10px auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  z-index: 2;
 }
 
+header h1,
+header p {
+  text-align: center;
+  padding-top: 0.7rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+header p {
+  font-size: 1rem;
+}
 body {
-  background-color: rgb(215, 240, 250);
+  background-color: rgb(231, 220, 240);
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .main-container {
-  background-color: rgba(108, 134, 182, 0.884);
+  background-color: rgba(5, 19, 44, 0.884);
+  color: rgb(220, 235, 248);
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 95%;
+  margin: 1.5rem auto;
+  font-size: 1.1rem;
   border-radius: 6px;
-  /*border:red 1px solid;*/
+  padding-bottom: 1rem;
+  box-shadow: 5px 5px 20px 5px rgb(82, 5, 75);
 }
 .form {
   display: flex;
   flex-direction: column;
-  margin: 0.2rem;
-  padding: 0.2rem;
-  width: inherit;
-  /*border: red 1px solid;*/
+  width: 100%;
 }
 
 .submit-button {
   background-color: rgba(93, 238, 117, 0.699);
   height: 30px;
   border-radius: 2px;
-  width: 600px;
+  width: 50%;
   align-self: center;
-  margin-top: 0.3rem;
+  margin-top: 0.7rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
-
+/*input fields*/
 .forma {
-  width: 600px;
+  width: 90%;
   height: 2rem;
-  /*border: green 1px solid;*/
+  border: green 1px solid;
   align-self: center;
+  margin: 5px auto;
+  margin-bottom: 15px;
+  border-radius: 4px;
 }
 
+.forma:focus {
+  background-color: rgb(235, 210, 250);
+}
+/*textarea*/
 .formatext {
-  width: 600px;
+  width: 90%;
   height: 5rem;
   align-self: center;
   padding: 1px;
-  margin-top: 0.3rem;
+  margin-top: 0.7rem;
+  border-radius: 5px;
+  border: green 1px solid;
 }
 
 .form-1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 1.3rem;
 }
 .form-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.improved_form p {
+  font-size: 1.3rem;
 }
 
 .margin-left {
-  margin-left: 3rem;
+  margin-left: 10%;
+  font-weight: 700;
 }
 
-@media (max-width: 450px) {
-  h1 {
-    font-size: 18px;
-    text-align: center;
-  }
-  header p {
-    font-size: 14px;
-    text-align: center;
-    width: 300px;
-  }
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 0;
-    font-size: 15px;
-    padding: 5px;
-    width: 350px;
-  }
+.dropdown-2 {
+  padding-top: 1rem;
+  margin: 1% 0;
+}
 
-  .form,
-  .forma,
-  .form-1,
-  .form-2,
-  .formatext,
-  .submit-button {
-    width: 280px;
-    align-self: center;
-  }
-  .margin-left {
-    margin-left: 0.4rem;
-  }
+.comments p{
+  margin-top: 1rem;
 }
